@@ -1,2 +1,2 @@
 ### Before you add any scripts...
-Remember that you should never add scripts **you don't trust** because craftscripts have the capability to bypass permission settings and modify configurations.  By default, `edits.scripting.execute` is granted to architects.
+Remember that you should never add scripts **you don't trust** because craftscripts have the capability to bypass permission settings and modify configurations.  By default, `edits.scripting.run` is granted to architects.

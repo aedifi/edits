@@ -1,17 +1,17 @@
 -- info.lua
 -- Implements the g_PluginInfo standard plugin description.
 
-g_PluginInfo = 
+g_PluginInfo =
 {
 	Name = "Edits",
 	Version = "1",
-	Date = "2020-11-27",
+	Date = "2021-06-19",
 	SourceLocation = "https://github.com/aedifi/edits",
 	Description = [[Efficient large-scale block edits.]],
-	
+
 	Commands =
 	{
-		["//addleaves"] = 
+		["//addleaves"] =
 		{
 			Permission = "edits.region.addleaves",
 			Handler = HandleAddLeavesCommand,
@@ -209,7 +209,7 @@ g_PluginInfo =
 			Handler = HandlePasteCommand,
 			HelpString = "Pastes the contents of your clipboard.",
 		},
-		["//pickaxe"] = 
+		["//pickaxe"] =
 		{
 			Permission = "edits.superpickaxe",
 			Handler = HandlePickaxeCommand,
@@ -417,18 +417,18 @@ g_PluginInfo =
 			Handler = HandleDescendCommand,
 			HelpString = "Descends you downward.",
 		},
-		["/execute"] =
-		{
-			Permission = "edits.scripting.execute",
-			Handler = HandleCraftScriptCommand,
-			HelpString = "Executes a craftscript.",
-        },
 		["/formats"] =
 		{
 			Permission = "edits.schematic.list",
 			Handler = HandleSchematicFormatsCommand,
 			HelpString = "Lists supported schematic formats.",
 		},
+		["/run"] =
+		{
+			Permission = "edits.scripting.run",
+			Handler = HandleCraftScriptCommand,
+			HelpString = "Executes a craftscript.",
+        },
 		["/schematics"] =
 		{
 			Permission = "edits.schematic.list",

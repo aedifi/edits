@@ -83,4 +83,4 @@ By default server configuration, these commands are granted to architects.
 By default server configuration, these commands are granted to moderators.
 | Usage | Permission(s) | Description |
 | ------- | ---------- | ----------- |
-| `/execute <script>` | `edits.scripting.execute` | Executes a craftscript. |
+| `/run <script>` | `edits.scripting.run` | Executes a craftscript. |

@@ -6,7 +6,7 @@ function HandleCraftScriptCommand(a_Split, a_Player)
 	local PlayerState = GetPlayerState(a_Player)
 
 	if (not a_Split[2]) then
-		a_Player:SendMessage(cChatColor.LightGray .. "Usage: /execute <script>")
+		a_Player:SendMessage(cChatColor.LightGray .. "Usage: " .. a_Split[1] .. " <script>")
 		return true
 	end
 
